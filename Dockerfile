@@ -1,4 +1,4 @@
-FROM sikmi/ruby253-deployer-docker
+FROM sikmi/ruby253-deployer-docker:v20190111
 
 RUN set -ex \
     && wget -qO- https://deb.nodesource.com/setup_8.x | bash - \
