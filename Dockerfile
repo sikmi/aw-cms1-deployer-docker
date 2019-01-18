@@ -14,5 +14,6 @@ RUN set -ex \
                  nodejs \
                  --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
-    && npm install -g yarn
+    && npm install -g yarn \
+    && pip install -U awscli
 
