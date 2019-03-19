@@ -1,5 +1,6 @@
 FROM ruby:2.6.2
 
+ENV LANG C.UTF-8
 ENV DOCKER_VERSION=17.03.0-ce
 RUN set -ex \
     && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
