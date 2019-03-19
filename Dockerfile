@@ -9,6 +9,7 @@ RUN set -ex \
                  nodejs \
                  gzip \
                  awscli \
+                 jq \
                  --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && npm install -g yarn \
