@@ -21,9 +21,9 @@ RUN set -ex \
     && mv /tmp/docker/* /usr/bin \
     && echo "####################################" \
     && echo awscli install \
-    && curl -sL https://bootstrap.pypa.io/get-pip.py | python3 - --user
+    && curl -sL https://bootstrap.pypa.io/get-pip.py | python3 - --user \
     && pip --version \
-    && pip install awscli --upgrade
+    && pip install awscli --upgrade \
     && echo "####################################" \
     && echo ecs cli install \
     && curl -o /usr/local/bin/ecs-cli https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-linux-amd64-latest \
